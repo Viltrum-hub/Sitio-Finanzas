@@ -4,146 +4,142 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Propuestas de cambio — EVOLVE</title>
-  <meta name="description" content="Conoce EVOLVE y el propósito de nuestro proyecto sobre los avances tecnológicos de la humanidad.">
+  <title>Propuestas de cambio — SVOLUCIÓN</title>
+  <meta name="description" content="Propuestas para fortalecer el acceso, la enseñanza digital y las competencias docentes en El Salvador.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=Orbitron:wght@500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="marco-teorico.css">
 </head>
 
 <body>
 
-  <!-- Fondo animado -->
   <canvas id="particle-canvas"></canvas>
   <canvas id="cursor-trail-canvas"></canvas>
-
-  <!-- Barra de progreso -->
   <div class="scroll-progress" id="scroll-progress"></div>
 
-  <!-- HEADER -->
   <header class="site-header" id="header">
-
     <div class="header-inner">
-
-      <a href="#inicio" class="logo">SVOLUCIÓN<img src="Imagenes/icon2-dark.svg" ><span class="logo-dot">.</span></a>
+      <a href="index.html" class="logo">SVOLUCIÓN<img src="Imagenes/icon2-dark.svg" alt=""><span class="logo-dot">.</span></a>
 
       <div class="header-actions">
-        <button class="icon-button" id="themeToggle"><i class="bi bi-moon-stars"></i></button>
+        <button class="icon-button" id="themeToggle" aria-label="Cambiar tema"><i class="bi bi-moon-stars"></i></button>
 
-
-        <button
-          class="menu-toggle"
-          id="menu-toggle"
-          aria-label="Abrir menú"
-          aria-expanded="false"
-          aria-controls="main-nav"
-        >
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-nav">
           <span class="menu-toggle-label">MENU</span>
-
-          <span class="menu-toggle-icon">
-            <span></span>
-            <span></span>
-            <span></span>
-          </span>
+          <span class="menu-toggle-icon"><span></span><span></span><span></span></span>
         </button>
-
       </div>
-
     </div>
 
     <nav class="main-nav" id="main-nav">
-
       <ul>
-        <li><a href="index.html"> Inicio</a></li>
-        <li><a href="nosotros.html">  Nosotros </a></li>
-        <li><a href="marco teorico.html"> Marco teórico</a></li>
-        <li><a href="resultado e impacto.html"> Resultado e impacto</a></li>
-        <li><a href="propuestas de cambio.html" class="active"> Propuestas de cambio</a></li>
-        <li> <a href="index.html#contacto"> Contacto</a></li>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="marco teorico.html">Marco teórico</a></li>
+        <li><a href="resultado e impacto.html">Resultado e impacto</a></li>
+        <li><a href="propuestas de cambio.html" class="active">Propuestas de cambio</a></li>
+        <li><a href="index.html#contacto">Contacto</a></li>
       </ul>
-
     </nav>
-
   </header>
 
-
-  <!-- HERO DE LA PÁGINA -->
   <main>
-
-    <section class="page-hero">
-
+    <section class="page-hero marco-hero">
       <div class="page-hero-inner">
-
-        <p class="page-eyebrow"> 04 — INFORMACIÓN</p>
-
-        <h1 class="page-title">
-          Propuestas de cambio<span>.</span>
-        </h1>
-
-        <p class="page-subtitle">
-          <!-- Aquí irá la introducción de la página Propuestas de cambio -->
-        </p>
-
+        <p class="page-eyebrow">04 — PROPUESTAS</p>
+        <h1 class="page-title">Propuestas de cambio<span>.</span></h1>
+        <p class="page-subtitle">Acciones orientadas a convertir la conectividad y las herramientas digitales en oportunidades de aprendizaje más accesibles y útiles.</p>
+        <div class="marco-hero-tags" aria-label="Áreas de acción">
+          <span><i class="bi bi-wifi"></i> Acceso</span>
+          <span><i class="bi bi-person-video3"></i> Docencia</span>
+          <span><i class="bi bi-graph-up"></i> Seguimiento</span>
+        </div>
       </div>
-
     </section>
 
-
-    <!-- CONTENIDO -->
-    <section class="page-content">
-
+    <section class="page-content marco-content">
       <div class="page-content-inner">
-
-        <div class="empty-content">
-          <!-- AQUÍ AGREGAREMOS EL CONTENIDO -->
+        <div class="marco-intro">
+          <div class="marco-intro-label"><span class="marco-kicker">// PUNTO DE PARTIDA</span><span class="marco-index">00</span></div>
+          <div class="marco-intro-copy">
+            <h2>Una transformación que incluya a quienes aprenden y enseñan</h2>
+            <p>El marco teórico vincula la expansión de la conectividad, la educación a distancia y las competencias docentes. A partir de esa relación, se plantean acciones aplicables en instituciones educativas. Son propuestas del proyecto, no programas ejecutados ni resultados ya comprobados.</p>
+          </div>
         </div>
 
+        <section class="marco-section" aria-labelledby="acceso-title">
+          <div class="marco-section-head"><span class="marco-section-number">01</span><div><p class="marco-kicker">// CONECTIVIDAD</p><h2 id="acceso-title">Identificar y atender barreras de acceso</h2></div></div>
+          <div class="marco-grid">
+            <article class="marco-card marco-card-featured"><div class="marco-card-icon"><i class="bi bi-clipboard-data"></i></div><h3>Diagnóstico inicial</h3><p>Consultar a estudiantes y docentes sobre conexión, dispositivos y dificultades para usar plataformas. Con ese diagnóstico, la institución puede priorizar las necesidades más frecuentes antes de elegir soluciones.</p></article>
+            <article class="marco-card"><div class="marco-card-icon"><i class="bi bi-download"></i></div><h3>Materiales accesibles</h3><p>Ofrecer recursos que puedan descargarse y consultarse con menor consumo de datos, junto con alternativas para quienes tienen acceso intermitente. La medida complementa el objetivo de ampliar la conectividad señalado en el documento <span class="citation">(MINEDUCYT, 2025)</span>.</p></article>
+          </div>
+        </section>
+
+        <section class="marco-section" aria-labelledby="docentes-title">
+          <div class="marco-section-head"><span class="marco-section-number">02</span><div><p class="marco-kicker">// FORMACIÓN</p><h2 id="docentes-title">Acompañar el trabajo docente</h2></div></div>
+          <div class="marco-reading-layout">
+            <div class="marco-reading-main">
+              <p>Organizar talleres breves y prácticos sobre diseño de actividades virtuales, comunicación con estudiantes y evaluación en línea. Cada docente podría probar una actividad en su curso y compartir los ajustes necesarios después de aplicarla.</p>
+              <p>Esta propuesta responde a la necesidad de fortalecer conjuntamente las competencias pedagógicas y tecnológicas planteada por <span class="citation">Menjívar (2017)</span>. El propósito es integrar las TIC a objetivos de aprendizaje claros, no limitarse a usar una plataforma.</p>
+            </div>
+            <aside class="marco-concept"><span class="concept-label">PRIORIDAD</span><strong>TIC</strong><p>Formación continua para utilizar herramientas digitales con intención pedagógica.</p></aside>
+          </div>
+        </section>
+
+        <section class="marco-section" aria-labelledby="plataformas-title">
+          <div class="marco-section-head"><span class="marco-section-number">03</span><div><p class="marco-kicker">// EXPERIENCIA EDUCATIVA</p><h2 id="plataformas-title">Mejorar el uso de los entornos virtuales</h2></div></div>
+          <div class="synthesis-grid">
+            <article><span>01 / ORIENTAR</span><h3>Ingreso sencillo</h3><p>Preparar guías claras para entrar a la plataforma, encontrar materiales y entregar tareas.</p></article>
+            <article><span>02 / ACOMPAÑAR</span><h3>Apoyo cercano</h3><p>Habilitar espacios de consulta para resolver dificultades técnicas y académicas durante el curso.</p></article>
+            <article><span>03 / PARTICIPAR</span><h3>Interacción</h3><p>Diseñar actividades de intercambio entre estudiantes y docentes para fortalecer la comunidad académica.</p></article>
+          </div>
+          <p class="synthesis-closing">Las plataformas descritas en el documento ofrecen acceso y flexibilidad; estas acciones buscan aprovechar mejor esas posibilidades en la práctica educativa <span class="citation">(Garrison, 2009; Moore &amp; Kearsley, 2012)</span>.</p>
+        </section>
+
+        <section class="marco-section marco-synthesis" aria-labelledby="seguimiento-title">
+          <div class="marco-section-head"><span class="marco-section-number">04</span><div><p class="marco-kicker">// IMPLEMENTACIÓN</p><h2 id="seguimiento-title">Aplicar, escuchar y ajustar</h2></div></div>
+          <div class="marco-process">
+            <div class="process-item"><span>01</span><h3>Diagnosticar</h3><p>Registrar necesidades de acceso y manejo de herramientas en un grupo o institución.</p></div>
+            <div class="process-line" aria-hidden="true"></div>
+            <div class="process-item"><span>02</span><h3>Poner a prueba</h3><p>Aplicar materiales accesibles, apoyo docente y orientación para plataformas en un periodo definido.</p></div>
+            <div class="process-line" aria-hidden="true"></div>
+            <div class="process-item"><span>03</span><h3>Evaluar</h3><p>Comparar la situación inicial y final, recoger experiencias y ajustar las acciones.</p></div>
+          </div>
+          <p class="synthesis-closing">Para evaluar la propuesta pueden observarse el acceso a materiales, la participación en actividades virtuales, las dificultades reportadas y la percepción de docentes y estudiantes. Estos son indicadores sugeridos; aún no hay valores medidos para presentarlos como resultados.</p>
+        </section>
+
+        <section class="marco-references" aria-labelledby="base-title">
+          <div class="references-head"><p class="marco-kicker">// FUNDAMENTO</p><h2 id="base-title">Una propuesta conectada con la investigación</h2></div>
+          <div class="references-list">
+            <article><span>01</span><p><strong>Marco teórico:</strong> políticas de conectividad, TIC en educación y formación docente, con las referencias completas.</p><a href="marco teorico.html">Leer marco <i class="bi bi-arrow-right"></i></a></article>
+            <article><span>02</span><p><strong>Resultado e impacto:</strong> hallazgos documentales y límites de la evidencia disponible.</p><a href="resultado e impacto.html">Ver análisis <i class="bi bi-arrow-right"></i></a></article>
+          </div>
+        </section>
       </div>
-
     </section>
-
   </main>
 
-
-  <!-- FOOTER -->
   <footer class="site-footer">
-
     <div class="footer-inner">
-
       <div class="footer-brand">
-
-        <a href="index.html" class="logo">
-          EVOLVE<span class="logo-dot">.</span>
-        </a>
-
-        <p>
-          Avances tecnológicos de la humanidad.
-        </p>
-
+        <a href="index.html" class="logo">SVOLUCIÓN<img src="Imagenes/icon2-dark.svg" alt=""><span class="logo-dot">.</span></a>
+        <p>Una mirada al desarrollo tecnológico de El Salvador.</p>
       </div>
 
       <div class="footer-contact">
-
-        <h3>Contacto</h3>
-
-        <a href="mailto:hola@evolve.com">
-          hola@evolve.com
-        </a>
-
+        <h3>Explorar</h3>
+        <a href="marco teorico.html">Marco teórico</a>
       </div>
-
     </div>
 
     <div class="footer-bottom">
       <p>© 2026 SVOLUCIÓN. Todos los derechos reservados.</p>
     </div>
-
   </footer>
 
-
   <script src="script.js"></script>
-
 </body>
 </html>
