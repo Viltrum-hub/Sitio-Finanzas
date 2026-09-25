@@ -4,147 +4,128 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Resultado e impacto — EVOLVE</title>
-
-  <meta name="description" content="Conoce EVOLVE y el propósito de nuestro proyecto sobre los avances tecnológicos de la humanidad.">
-
+  <title>Resultado e impacto — SVOLUCIÓN</title>
+  <meta name="description" content="Hallazgos documentales e impacto potencial de la conectividad y la educación digital en El Salvador.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=Orbitron:wght@500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="marco-teorico.css">
 </head>
 
 <body>
 
-  <!-- Fondo animado -->
   <canvas id="particle-canvas"></canvas>
   <canvas id="cursor-trail-canvas"></canvas>
-
-  <!-- Barra de progreso -->
   <div class="scroll-progress" id="scroll-progress"></div>
 
-  <!-- HEADER -->
   <header class="site-header" id="header">
-
     <div class="header-inner">
+      <a href="index.html" class="logo">SVOLUCIÓN<img src="Imagenes/icon2-dark.svg" alt=""><span class="logo-dot">.</span></a>
 
-      <a href="#inicio" class="logo">SVOLUCIÓN<img src="Imagenes/icon2-dark.svg" ><span class="logo-dot">.</span></a>
+      <div class="header-actions">
+        <button class="icon-button" id="themeToggle" aria-label="Cambiar tema"><i class="bi bi-moon-stars"></i></button>
 
-        <div class="header-actions">
-        <button class="icon-button" id="themeToggle"><i class="bi bi-moon-stars"></i></button>
-
-        <button
-          class="menu-toggle"
-          id="menu-toggle"
-          aria-label="Abrir menú"
-          aria-expanded="false"
-          aria-controls="main-nav"
-        >
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-nav">
           <span class="menu-toggle-label">MENU</span>
-
-          <span class="menu-toggle-icon">
-            <span></span>
-            <span></span>
-            <span></span>
-          </span>
+          <span class="menu-toggle-icon"><span></span><span></span><span></span></span>
         </button>
-
       </div>
-
     </div>
 
     <nav class="main-nav" id="main-nav">
-
       <ul>
-        <li><a href="index.html"> Inicio</a></li>
-        <li><a href="nosotros.html">  Nosotros </a></li>
-        <li><a href="marco teorico.html"> Marco teórico</a></li>
-        <li><a href="resultado e impacto.html" class="active"> Resultado e impacto</a></li>
-        <li><a href="propuestas de cambio.html"> Propuestas de cambio</a></li>
-        <li> <a href="index.html#contacto"> Contacto</a></li>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="marco teorico.html">Marco teórico</a></li>
+        <li><a href="resultado e impacto.html" class="active">Resultado e impacto</a></li>
+        <li><a href="propuestas de cambio.html">Propuestas de cambio</a></li>
+        <li><a href="index.html#contacto">Contacto</a></li>
       </ul>
-
     </nav>
-
   </header>
 
-
-  <!-- HERO DE LA PÁGINA -->
   <main>
-
-    <section class="page-hero">
-
+    <section class="page-hero marco-hero">
       <div class="page-hero-inner">
-
-        <p class="page-eyebrow"> 03 — INFORMACIÓN</p>
-
-        <h1 class="page-title">
-          Resultado e impacto<span>.</span>
-        </h1>
-
-        <p class="page-subtitle">
-          <!-- Aquí irá la introducción de la página Resultado e impacto -->
-        </p>
-
+        <p class="page-eyebrow">03 — ANÁLISIS DOCUMENTAL</p>
+        <h1 class="page-title">Resultado e impacto<span>.</span></h1>
+        <p class="page-subtitle">Lo que la información consultada permite identificar sobre conectividad, educación digital y formación docente en El Salvador.</p>
+        <div class="marco-hero-tags" aria-label="Ejes del análisis">
+          <span><i class="bi bi-broadcast-pin"></i> Conectividad</span>
+          <span><i class="bi bi-mortarboard"></i> Educación</span>
+          <span><i class="bi bi-person-workspace"></i> Docencia</span>
+        </div>
       </div>
-
     </section>
 
-
-    <!-- CONTENIDO -->
-    <section class="page-content">
-
+    <section class="page-content marco-content">
       <div class="page-content-inner">
-
-        <div class="empty-content">
-          <!-- AQUÍ AGREGAREMOS EL CONTENIDO -->
+        <div class="marco-intro">
+          <div class="marco-intro-label"><span class="marco-kicker">// ALCANCE</span><span class="marco-index">00</span></div>
+          <div class="marco-intro-copy">
+            <h2>Resultados de la revisión</h2>
+            <p>El documento base relaciona el desarrollo tecnológico del país con políticas públicas, expansión de la conectividad y adopción de herramientas digitales en educación. Los siguientes hallazgos sintetizan esa información y las referencias citadas. Se trata de una revisión documental: no se realizaron encuestas, pruebas ni mediciones de impacto propias.</p>
+          </div>
         </div>
 
+        <section class="marco-section" aria-labelledby="hallazgos-title">
+          <div class="marco-section-head"><span class="marco-section-number">01</span><div><p class="marco-kicker">// HALLAZGOS</p><h2 id="hallazgos-title">Tres ámbitos que se conectan</h2></div></div>
+          <div class="synthesis-grid">
+            <article><span>01 / INFRAESTRUCTURA</span><h3>Impulso digital</h3><p>Las políticas públicas, los acuerdos y la Agenda Digital 2020–2030 se presentan como impulsores de la conectividad y la infraestructura tecnológica <span class="citation">(MINEDUCYT, 2025)</span>.</p></article>
+            <article><span>02 / APRENDIZAJE</span><h3>Entornos virtuales</h3><p>La incorporación de plataformas en universidades como la UES amplía las opciones de acceso y flexibilidad para la educación a distancia <span class="citation">(Garrison, 2009; Moore &amp; Kearsley, 2012)</span>.</p></article>
+            <article><span>03 / CAPACIDADES</span><h3>Formación docente</h3><p>El aprovechamiento educativo de las TIC requiere fortalecer las competencias tecnológicas y pedagógicas del profesorado <span class="citation">(Menjívar, 2017)</span>.</p></article>
+          </div>
+        </section>
+
+        <section class="marco-section" aria-labelledby="impacto-title">
+          <div class="marco-section-head"><span class="marco-section-number">02</span><div><p class="marco-kicker">// INTERPRETACIÓN</p><h2 id="impacto-title">¿Qué impacto puede tener?</h2></div></div>
+          <div class="marco-grid">
+            <article class="marco-card marco-card-featured"><div class="marco-card-icon"><i class="bi bi-book"></i></div><h3>En la educación</h3><p>La flexibilidad y el acceso a plataformas pueden favorecer la continuidad del aprendizaje, la interacción académica y el desarrollo de habilidades digitales. Su alcance depende de que existan condiciones de acceso y acompañamiento pedagógico.</p></article>
+            <article class="marco-card"><div class="marco-card-icon"><i class="bi bi-diagram-3"></i></div><h3>En el desarrollo del país</h3><p>Una mejor conectividad puede abrir oportunidades para actividades educativas y económicas. El documento plantea esta relación como una posibilidad de desarrollo, sin cuantificar efectos económicos concretos.</p></article>
+          </div>
+        </section>
+
+        <section class="marco-section marco-synthesis" aria-labelledby="lectura-title">
+          <div class="marco-section-head"><span class="marco-section-number">03</span><div><p class="marco-kicker">// LECTURA CRÍTICA</p><h2 id="lectura-title">Del acceso al uso significativo</h2></div></div>
+          <div class="marco-reading-layout">
+            <div class="marco-reading-main">
+              <p>La expansión tecnológica y la presencia de plataformas indican una transformación en las oportunidades de enseñanza. Sin embargo, disponer de tecnología no permite concluir, por sí mismo, que el aprendizaje haya mejorado. La formación docente y la integración de las herramientas en las actividades académicas son componentes necesarios para interpretar ese posible impacto <span class="citation">(Menjívar, 2017)</span>.</p>
+              <p>Para valorar resultados concretos harían falta datos comparables sobre acceso, uso de plataformas, participación y experiencias de docentes y estudiantes. El material compartido no contiene esas cifras, por lo que aquí no se presentan porcentajes ni logros medidos.</p>
+            </div>
+            <aside class="marco-concept"><span class="concept-label">IDEA CENTRAL</span><strong>TIC</strong><p>Su efecto depende tanto de la conexión como de la forma en que se incorporan al aprendizaje.</p></aside>
+          </div>
+          <p class="synthesis-closing">En síntesis, la revisión permite identificar una relación entre conectividad, educación virtual y competencias docentes. La magnitud del impacto permanece abierta a una evaluación con datos propios.</p>
+        </section>
+
+        <section class="marco-references" aria-labelledby="fuentes-title">
+          <div class="references-head"><p class="marco-kicker">// CONTINUIDAD</p><h2 id="fuentes-title">Del análisis a la acción</h2></div>
+          <p class="synthesis-closing">Las propuestas siguientes toman estos hallazgos como punto de partida. Las referencias bibliográficas completas se encuentran en el <a href="marco teorico.html" style="color:var(--color-cyan);text-decoration:underline">marco teórico</a>.</p>
+          <div class="references-list"><article><span>→</span><p><strong>Continuar:</strong> acciones para ampliar el acceso y fortalecer el uso educativo de la tecnología.</p><a href="propuestas de cambio.html">Ver propuestas <i class="bi bi-arrow-right"></i></a></article></div>
+        </section>
       </div>
-
     </section>
-
   </main>
 
-
-  <!-- FOOTER -->
   <footer class="site-footer">
-
     <div class="footer-inner">
-
       <div class="footer-brand">
-
-        <a href="index.html" class="logo">
-          EVOLVE<span class="logo-dot">.</span>
-        </a>
-
-        <p>
-          Avances tecnológicos de la humanidad.
-        </p>
-
+        <a href="index.html" class="logo">SVOLUCIÓN<img src="Imagenes/icon2-dark.svg" alt=""><span class="logo-dot">.</span></a>
+        <p>Una mirada al desarrollo tecnológico de El Salvador.</p>
       </div>
 
       <div class="footer-contact">
-
-        <h3>Contacto</h3>
-
-        <a href="mailto:hola@evolve.com">
-          hola@evolve.com
-        </a>
-
+        <h3>Explorar</h3>
+        <a href="propuestas de cambio.html">Propuestas de cambio</a>
       </div>
-
     </div>
 
     <div class="footer-bottom">
       <p>© 2026 SVOLUCIÓN. Todos los derechos reservados.</p>
     </div>
-
   </footer>
 
-
   <script src="script.js"></script>
-
 </body>
 </html>
