@@ -4,144 +4,293 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Marco teórico — EVOLVE</title>
-  <meta name="description" content="Marco teórico del proyecto EVOLVE sobre los avances tecnológicos de la humanidad.">
+  <title>Marco teórico — SVOLUCIÓN</title>
+  <meta name="description" content="Marco teórico del proyecto SVOLUCIÓN sobre el desarrollo tecnológico en El Salvador.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=Orbitron:wght@500;600;700;800&display=swap" rel="stylesheet">
- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=Orbitron:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="marco-teorico.css">
 </head>
 
 <body>
 
-  <!-- Fondo animado -->
   <canvas id="particle-canvas"></canvas>
   <canvas id="cursor-trail-canvas"></canvas>
-
-  <!-- Barra de progreso -->
   <div class="scroll-progress" id="scroll-progress"></div>
 
-  <!-- HEADER -->
   <header class="site-header" id="header">
-
     <div class="header-inner">
+      <a href="index.html" class="logo">SVOLUCIÓN<img src="Imagenes/icon2-dark.svg" alt=""><span class="logo-dot">.</span></a>
 
-      <a href="#inicio" class="logo">SVOLUCIÓN<img src="Imagenes/icon2-dark.svg" ><span class="logo-dot">.</span></a>
+      <div class="header-actions">
+        <button class="icon-button" id="themeToggle" aria-label="Cambiar tema"><i class="bi bi-moon-stars"></i></button>
 
-        <div class="header-actions">
-        <button class="icon-button" id="themeToggle"><i class="bi bi-moon-stars"></i></button>
-
-        <button
-          class="menu-toggle"
-          id="menu-toggle"
-          aria-label="Abrir menú"
-          aria-expanded="false"
-          aria-controls="main-nav"
-        >
+        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-nav">
           <span class="menu-toggle-label">MENU</span>
-
-          <span class="menu-toggle-icon">
-            <span></span>
-            <span></span>
-            <span></span>
-          </span>
+          <span class="menu-toggle-icon"><span></span><span></span><span></span></span>
         </button>
-
       </div>
-
     </div>
 
     <nav class="main-nav" id="main-nav">
-
       <ul>
-
-        <li><a href="index.html"> Inicio </a></li>
-        <li><a href="nosotros.html"> Nosotros</a></li>
-        <li><a href="marco teorico.html" class="active"> Marco teórico</a></li>
-        <li><a href="resultado e impacto.html"> Resultado e impacto</a></li>
-        <li><a href="propuestas de cambio.html"> Propuestas de cambio</a></li>
-        <li><a href="index.html#contacto"> Contacto </a></li>
-
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="marco teorico.html" class="active">Marco teórico</a></li>
+        <li><a href="resultado e impacto.html">Resultado e impacto</a></li>
+        <li><a href="propuestas de cambio.html">Propuestas de cambio</a></li>
+        <li><a href="index.html#contacto">Contacto</a></li>
       </ul>
-
     </nav>
-
   </header>
 
-
-  <!-- HERO -->
   <main>
-
-    <section class="page-hero">
-
+    <section class="page-hero marco-hero">
       <div class="page-hero-inner">
-
-        <p class="page-eyebrow"> 02 — INVESTIGACIÓN</p>
+        <p class="page-eyebrow">02 — INVESTIGACIÓN</p>
         <h1 class="page-title">Marco teórico<span>.</span></h1>
-
         <p class="page-subtitle">
-          <!-- Aquí irá la introducción del marco teórico -->
+          Una mirada al desarrollo tecnológico de El Salvador desde la conectividad,
+          la educación digital y las competencias necesarias para aprovechar la tecnología
+          como herramienta de progreso.
         </p>
 
+        <div class="marco-hero-tags" aria-label="Ejes del marco teórico">
+          <span><i class="bi bi-broadcast-pin"></i> Conectividad</span>
+          <span><i class="bi bi-mortarboard"></i> Educación</span>
+          <span><i class="bi bi-laptop"></i> Competencias digitales</span>
+        </div>
       </div>
-
     </section>
 
-
-    <!-- CONTENIDO -->
-    <section class="page-content">
-
+    <section class="page-content marco-content">
       <div class="page-content-inner">
 
-        <div class="empty-content">
-          <!-- AQUÍ AGREGAREMOS EL MARCO TEÓRICO -->
+        <div class="marco-intro">
+          <div class="marco-intro-label">
+            <span class="marco-kicker">// CONTEXTO</span>
+            <span class="marco-index">00</span>
+          </div>
+
+          <div class="marco-intro-copy">
+            <h2>El desarrollo tecnológico como parte de la transformación del país</h2>
+            <p>
+              El desarrollo tecnológico en El Salvador ha estado relacionado con políticas públicas,
+              acuerdos, convenios y la expansión de la conectividad digital. Estos procesos han contribuido
+              a generar mejores condiciones para sectores importantes como la educación y la economía.
+              Dentro de este contexto, la Agenda Digital 2020–2030 plantea el fortalecimiento de la
+              infraestructura tecnológica y la diversificación digital en el territorio nacional
+              <span class="citation">(MINEDUCYT, 2025)</span>.
+            </p>
+          </div>
         </div>
 
+        <section class="marco-highlight" aria-label="Idea principal">
+          <div class="highlight-orbit" aria-hidden="true"></div>
+          <div>
+            <span class="highlight-number">2020–2030</span>
+            <p>Periodo de referencia de la Agenda Digital mencionada como parte del impulso a la infraestructura tecnológica y la diversificación digital del país.</p>
+          </div>
+        </section>
+
+        <section class="marco-section">
+          <div class="marco-section-head">
+            <span class="marco-section-number">01</span>
+            <div>
+              <p class="marco-kicker">// TRANSFORMACIÓN DIGITAL</p>
+              <h2>Políticas públicas y conectividad</h2>
+            </div>
+          </div>
+
+          <div class="marco-grid">
+            <article class="marco-card marco-card-featured">
+              <div class="marco-card-icon"><i class="bi bi-diagram-3"></i></div>
+              <h3>Infraestructura tecnológica</h3>
+              <p>
+                La expansión de la conectividad digital constituye una base importante para ampliar
+                el acceso a herramientas tecnológicas y favorecer el desarrollo de actividades
+                educativas y económicas.
+              </p>
+            </article>
+
+            <article class="marco-card">
+              <div class="marco-card-icon"><i class="bi bi-globe2"></i></div>
+              <h3>Diversificación digital</h3>
+              <p>
+                La Agenda Digital 2020–2030 busca promover un entorno con mayor presencia de recursos,
+                servicios y oportunidades digitales en diferentes espacios del país
+                <span class="citation">(MINEDUCYT, 2025)</span>.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="marco-section">
+          <div class="marco-section-head">
+            <span class="marco-section-number">02</span>
+            <div>
+              <p class="marco-kicker">// EDUCACIÓN Y TIC</p>
+              <h2>La tecnología dentro de los procesos de enseñanza</h2>
+            </div>
+          </div>
+
+          <div class="marco-reading-layout">
+            <div class="marco-reading-main">
+              <p>
+                En el ámbito educativo, las Tecnologías de la Información y la Comunicación
+                <strong>(TIC)</strong> han transformado los procesos de enseñanza, especialmente
+                en modalidades de educación a distancia. Su incorporación ha permitido desarrollar
+                nuevas formas de interacción, acceso a contenidos y organización del aprendizaje.
+              </p>
+
+              <p>
+                Universidades salvadoreñas como la <strong>Universidad de El Salvador (UES)</strong>
+                han incorporado plataformas virtuales que facilitan el acceso y la flexibilidad,
+                al mismo tiempo que favorecen la creación de comunidades académicas y el desarrollo
+                de competencias digitales <span class="citation">(Garrison, 2009; Moore & Kearsley, 2012)</span>.
+              </p>
+            </div>
+
+            <aside class="marco-concept">
+              <span class="concept-label">CONCEPTO CLAVE</span>
+              <strong>TIC</strong>
+              <p>Tecnologías de la Información y la Comunicación aplicadas a los procesos formativos.</p>
+            </aside>
+          </div>
+        </section>
+
+        <section class="marco-section">
+          <div class="marco-section-head">
+            <span class="marco-section-number">03</span>
+            <div>
+              <p class="marco-kicker">// FORMACIÓN DOCENTE</p>
+              <h2>Competencias pedagógicas y tecnológicas</h2>
+            </div>
+          </div>
+
+          <div class="marco-quote-panel">
+            <div class="quote-mark">“</div>
+            <div>
+              <p>
+                La presencia de herramientas digitales no garantiza por sí sola una mejora educativa.
+                Su integración debe acompañarse del fortalecimiento de las competencias pedagógicas
+                y tecnológicas de los docentes para desenvolverse adecuadamente en entornos virtuales.
+              </p>
+              <span>Idea desarrollada a partir de Menjívar (2017)</span>
+            </div>
+          </div>
+
+          <div class="marco-process">
+            <div class="process-item">
+              <span>01</span>
+              <h3>Conocer</h3>
+              <p>Comprender las herramientas digitales disponibles y sus posibilidades educativas.</p>
+            </div>
+            <div class="process-line"></div>
+            <div class="process-item">
+              <span>02</span>
+              <h3>Integrar</h3>
+              <p>Incorporarlas de forma coherente dentro de los procesos de enseñanza y aprendizaje.</p>
+            </div>
+            <div class="process-line"></div>
+            <div class="process-item">
+              <span>03</span>
+              <h3>Fortalecer</h3>
+              <p>Desarrollar competencias que permitan aprovechar los entornos virtuales de manera efectiva.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="marco-section marco-synthesis">
+          <div class="marco-section-head">
+            <span class="marco-section-number">04</span>
+            <div>
+              <p class="marco-kicker">// SÍNTESIS</p>
+              <h2>Relación entre tecnología, educación y desarrollo</h2>
+            </div>
+          </div>
+
+          <div class="synthesis-grid">
+            <article>
+              <span>01</span>
+              <h3>Conectividad</h3>
+              <p>Amplía las posibilidades de acceso a herramientas y entornos digitales.</p>
+            </article>
+            <article>
+              <span>02</span>
+              <h3>Educación digital</h3>
+              <p>Favorece nuevas modalidades de enseñanza, aprendizaje y participación académica.</p>
+            </article>
+            <article>
+              <span>03</span>
+              <h3>Competencias</h3>
+              <p>Permiten utilizar la tecnología de manera más efectiva dentro de los procesos formativos.</p>
+            </article>
+          </div>
+
+          <p class="synthesis-closing">
+            En conjunto, estos elementos muestran que el desarrollo tecnológico del país no depende
+            únicamente de contar con dispositivos o conexión, sino también de la capacidad de integrar
+            la tecnología de forma adecuada en la educación y en los procesos de desarrollo social.
+          </p>
+        </section>
+
+        <section class="marco-references">
+          <div class="references-head">
+            <p class="marco-kicker">// FUENTES</p>
+            <h2>Referencias</h2>
+          </div>
+
+          <div class="references-list">
+            <article>
+              <span>01</span>
+              <p><strong>MINEDUCYT. (2025).</strong> Educación Superior.</p>
+              <a href="https://www.mined.gob.sv/educacion-superior/?wpdmc=informacion-estadistica-de-educacion-superior" target="_blank" rel="noopener">Consultar fuente <i class="bi bi-arrow-up-right"></i></a>
+            </article>
+
+            <article>
+              <span>02</span>
+              <p><strong>Garrison, D. R. (2009).</strong> Implications of Online and Blended Learning for the Conceptual Development and Practice of Distance Education. <em>The Journal of Distance Education, 23</em>(2), 93–104.</p>
+              <a href="https://www.ijede.ca/index.php/jde/article/view/471" target="_blank" rel="noopener">Consultar fuente <i class="bi bi-arrow-up-right"></i></a>
+            </article>
+
+            <article>
+              <span>03</span>
+              <p><strong>Moore, M., & Kearsley, G. (2012).</strong> <em>Distance education: A systems view of online learning</em> (3rd ed.). Routledge.</p>
+            </article>
+
+            <article>
+              <span>04</span>
+              <p><strong>Menjívar, E. (2017).</strong> Estrategias de enseñanza-aprendizaje con el uso de herramientas tecnológicas: una reflexión desde la experiencia docente. <em>Diá-logos</em>, (20), 7–17.</p>
+              <a href="https://www.revistas.udb.edu.sv/ojs/index.php/dl/article/view/124/98" target="_blank" rel="noopener">Consultar fuente <i class="bi bi-arrow-up-right"></i></a>
+            </article>
+          </div>
+        </section>
+
       </div>
-
     </section>
-
   </main>
 
-
-  <!-- FOOTER -->
   <footer class="site-footer">
-
     <div class="footer-inner">
-
       <div class="footer-brand">
-
-        <a href="index.html" class="logo">
-          EVOLVE<span class="logo-dot">.</span>
-        </a>
-
-        <p>
-          Avances tecnológicos de la humanidad.
-        </p>
-
+        <a href="index.html" class="logo">SVOLUCIÓN<img src="Imagenes/icon2-dark.svg" alt=""><span class="logo-dot">.</span></a>
+        <p>Una mirada al desarrollo tecnológico de El Salvador.</p>
       </div>
 
       <div class="footer-contact">
-
-        <h3>Contacto</h3>
-
-        <a href="mailto:hola@evolve.com">
-          hola@evolve.com
-        </a>
-
+        <h3>Explorar</h3>
+        <a href="resultado e impacto.html">Resultado e impacto</a>
       </div>
-
     </div>
 
     <div class="footer-bottom">
       <p>© 2026 SVOLUCIÓN. Todos los derechos reservados.</p>
     </div>
-
   </footer>
 
-
   <script src="script.js"></script>
-
 </body>
 </html>
