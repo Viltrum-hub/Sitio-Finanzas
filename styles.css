@@ -1802,3 +1802,80 @@ input:focus-visible {
   display: block;
   margin-top: 8px;
 }
+
+/* Contacto del proyecto */
+.contact-section {
+  position: relative;
+  z-index: 1;
+  padding: clamp(70px, 9vw, 120px) 0;
+  scroll-margin-top: 80px;
+}
+.contact-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(250px, .7fr);
+  gap: clamp(35px, 6vw, 80px);
+  align-items: center;
+  padding: clamp(30px, 5vw, 65px);
+  border: 1px solid var(--color-border);
+  border-radius: 24px;
+  background:
+    radial-gradient(circle at 92% 18%, rgba(var(--color-purple-rgb), .14), transparent 36%),
+    linear-gradient(135deg, rgba(var(--color-cyan-rgb), .06), transparent 60%),
+    var(--color-surface);
+}
+.contact-copy h2 {
+  max-width: 660px;
+  margin: 0 0 20px;
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4.5vw, 4.2rem);
+  line-height: 1.06;
+  letter-spacing: -.04em;
+}
+.contact-copy h2 span { color: var(--color-cyan); }
+.contact-copy > p:not(.section-eyebrow) {
+  max-width: 570px;
+  margin: 0 0 30px;
+  color: var(--color-text-soft);
+  line-height: 1.8;
+}
+.contact-copy .btn { display: inline-flex; align-items: center; gap: 10px; }
+.contact-email {
+  display: block;
+  width: fit-content;
+  margin-top: 18px;
+  color: var(--color-cyan);
+  overflow-wrap: anywhere;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.contact-qr {
+  justify-self: center;
+  width: min(100%, 280px);
+  text-align: center;
+}
+.contact-qr-label {
+  display: block;
+  margin-bottom: 15px;
+  color: var(--color-cyan);
+  font-family: var(--font-mono);
+  font-size: .72rem;
+  letter-spacing: .1em;
+}
+.contact-qr > a:first-of-type {
+  display: block;
+  padding: 14px;
+  border: 1px solid var(--color-border);
+  border-radius: 18px;
+  background: #fff;
+}
+.contact-qr img { width: 100%; height: auto; }
+.contact-qr p {
+  margin: 15px 0 4px;
+  color: var(--color-text-soft);
+  font-size: .9rem;
+}
+.contact-site-link { color: var(--color-cyan); font-size: .82rem; }
+@media (max-width: 760px) {
+  .contact-panel { grid-template-columns: 1fr; }
+  .contact-qr { margin-top: 12px; }
+}
