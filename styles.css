@@ -1785,3 +1785,20 @@ input:focus-visible {
   outline-offset: 2px;
 }
 
+
+/* Fuentes visibles de los datos presentados en Inicio */
+.section-source {
+  margin: 30px 0 0;
+  color: var(--color-text-soft);
+  font-size: .82rem;
+  line-height: 1.7;
+}
+.section-source a {
+  color: var(--color-cyan);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.footer-contact a {
+  display: block;
+  margin-top: 8px;
+}
