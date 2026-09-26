@@ -1,6 +1,6 @@
 
 // ============================================
-// EVOLVE — JavaScript principal
+// SVOLUCIÓN — JavaScript principal
 // ============================================
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const root = document.documentElement;
 
   const savedTheme =
-    localStorage.getItem("evolve-theme");
+    localStorage.getItem("svolucion-theme");
 
   let activeAccentRGB = "0, 245, 255";
 
@@ -126,7 +126,7 @@ document.addEventListener("DOMContentLoaded", () => {
         applyTheme(nextTheme);
 
         localStorage.setItem(
-          "evolve-theme",
+          "svolucion-theme",
           nextTheme
         );
 
@@ -191,7 +191,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (nosotrosTypewriterEl) {
 
     const fullTextNosotros =
-      '"Tecnologia y educacion transformando a El salvador"';
+      '"Tecnología y educación transformando a El Salvador"';
 
     let nosotrosIndex = 0;
 
